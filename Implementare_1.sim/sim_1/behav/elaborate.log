@@ -1,0 +1,25 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 32f33a6734414476b775f222d8129a54 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Metoda2_TB_behav xil_defaultlib.Metoda2_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.mypackage
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.UC_met2 [uc_met2_default]
+Compiling architecture behavioral of entity xil_defaultlib.bistabil_retine_numar [\bistabil_retine_numar(n=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.SRRN [\SRRN(n=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.SRRN [\SRRN(n=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.Sumator_4biti [sumator_4biti_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sumator_zecimal [sumator_zecimal_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cascadare_sumatoare_zecimale [cascadare_sumatoare_zecimale_def...]
+Compiling architecture behavioral of entity xil_defaultlib.Metoda2_inmultire [metoda2_inmultire_default]
+Compiling architecture behavioral of entity xil_defaultlib.metoda2_tb
+Built simulation snapshot Metoda2_TB_behav

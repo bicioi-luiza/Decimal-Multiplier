@@ -1,0 +1,13 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sim_1/new/Metoda2_TB.vhd,1704657493,vhdl,,,,metoda2_tb,,,,,,,,
+C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Cascadare_sumatoare_zecimale.vhd,1700964817,vhdl,C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Metoda2_inmultire.vhd,,,cascadare_sumatoare_zecimale,,,,,,,,
+C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Metoda2_inmultire.vhd,1704633265,vhdl,C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sim_1/new/Metoda2_TB.vhd,,,metoda2_inmultire,,,,,,,,
+C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/SRRN.vhd,1701010496,vhdl,C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Metoda2_inmultire.vhd,,,srrn,,,,,,,,
+C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Sumator_4biti.vhd,1700953446,vhdl,C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Sumator_zecimal.vhd,,,sumator_4biti,,,,,,,,
+C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Sumator_zecimal.vhd,1700954056,vhdl,C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Cascadare_sumatoare_zecimale.vhd,,,sumator_zecimal,,,,,,,,
+C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/UC_met2.vhd,1702839849,vhdl,C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Metoda2_inmultire.vhd,,,uc_met2,,,,,,,,
+C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/bistabil_retine_numar.vhd,1700963602,vhdl,C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Metoda2_inmultire.vhd,,,bistabil_retine_numar,,,,,,,,
+C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/myPackage.vhd,1700962792,vhdl,C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sim_1/new/Metoda2_TB.vhd;C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Cascadare_sumatoare_zecimale.vhd;C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/Metoda2_inmultire.vhd;C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/SRRN.vhd;C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.srcs/sources_1/new/bistabil_retine_numar.vhd,,,mypackage,,,,,,,,

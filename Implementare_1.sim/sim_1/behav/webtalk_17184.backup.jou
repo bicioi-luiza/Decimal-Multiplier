@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jan 08 13:13:15 2024
+# Process ID: 17184
+# Current directory: C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.sim/sim_1/behav/xsim.dir/Metoda2_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Facultate/SEM1_3/SSC_PROIECT/Implementare_1/Implementare_1.sim/sim_1/behav/xsim.dir/Metoda2_TB_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../Implementare_1.srcs/sources_1/new/Sumator_4biti.vhd"
+vhdl xil_defaultlib  "../../../Implementare_1.srcs/sources_1/new/myPackage.vhd"
+vhdl xil_defaultlib  "../../../Implementare_1.srcs/sources_1/new/Sumator_zecimal.vhd"
+vhdl xil_defaultlib  "../../../Implementare_1.srcs/sources_1/new/UC_met2.vhd"
+vhdl xil_defaultlib  "../../../Implementare_1.srcs/sources_1/new/SRRN.vhd"
+vhdl xil_defaultlib  "../../../Implementare_1.srcs/sources_1/new/bistabil_retine_numar.vhd"
+vhdl xil_defaultlib  "../../../Implementare_1.srcs/sources_1/new/Cascadare_sumatoare_zecimale.vhd"
+vhdl xil_defaultlib  "../../../Implementare_1.srcs/sources_1/new/Metoda2_inmultire.vhd"
+vhdl xil_defaultlib  "../../../Implementare_1.srcs/sim_1/new/Metoda2_TB.vhd"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,171 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 11/26/2023 03:55:08 AM
+-- Design Name: 
+-- Module Name: UC_Met1 - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity UC_Met1 is
+Port (
+    Clk: IN std_logic;
+    Rst: IN std_logic;
+    Start: IN std_logic;
+    Q0: IN std_logic_vector(3 downto 0);
+    LoadB: OUT std_logic;
+    RstA: OUT std_logic;
+    RstB: OUT std_logic;
+    RstQ: OUT std_logic;
+    LoadA: OUT std_logic;
+    LoadQ: OUT std_logic;
+    shrAQ: OUT std_logic;
+    Term: OUT std_logic);
+end UC_Met1;
+
+architecture Behavioral of UC_Met1 is
+
+type stare is (idle, init,initCifra, testCifra, operatiiProdPartial, shiftare, testC, stop);
+signal state: stare:=idle;
+signal DIGIT_CNT: std_logic_vector(3 downto 0):="0000"; --cifra din numar la care ne aflam
+signal STEP_CNT: std_logic_vector(2 downto 0):="000";--a cata cifra 
+
+begin
+
+proces_stare: process(clk)
+begin
+    if(Rst = '1') then
+        state <= idle;
+    elsif(clk = '1' and clk'event) then
+        case state is
+            when idle => if(Start = '1') then
+                            state <= init;
+                         else
+                            state <= idle;
+                         end if; 
+                         STEP_CNT <= "100";
+            when init => state <= initCifra;
+            when initCifra =>  DIGIT_CNT <= Q0; 
+                                state <= testCifra;
+            when testCifra => if(DIGIT_CNT > 0) then
+                                state <= operatiiProdPartial;
+                                DIGIT_CNT <= DIGIT_CNT - 1;
+                              else
+                                state <= shiftare;
+                                STEP_CNT <= STEP_CNT - 1;
+                                DIGIT_CNT <= Q0;
+                              end if;
+            when operatiiProdPartial => state <= testCifra;
+            when shiftare => state <= testC;
+            when testC => if(STEP_CNT > 0) then
+                              state <= initCifra;
+                          else
+                              state <= stop;
+                          end if;
+            when stop => state <= stop;
+        end case;
+    end if;
+end process;
+
+proces_iesiri: process(state)
+    begin
+        case state is
+            when idle => LoadA <= '0';
+                         RstA <= '1';
+                         RstB <= '1';
+                         RstQ <= '1';
+                         LoadB <= '0';
+                         shrAQ <= '0';
+                         LoadQ <= '0';
+                         Term <= '0';
+                         
+             when init => LoadA <= '1';
+                         RstA <= '0';
+                         RstB <= '0';
+                         RstQ <= '0';
+                         LoadB <= '1';
+                         shrAQ <= '0';
+                         LoadQ <= '1';
+                         Term <= '0';
+             when initCifra => LoadA <= '0';
+                                RstA <= '0';
+                                RstB <= '0';
+                                RstQ <= '0';
+                                LoadB <= '0';
+                                shrAQ <= '0';
+                                LoadQ <= '0';
+                                Term <= '0';
+                                           
+             when testCifra => LoadA <= '0';
+                                RstA <= '0';
+                                RstB <= '0';
+                                RstQ <= '0';
+                                LoadB <= '0';
+                                shrAQ <= '0';
+                                LoadQ <= '0';
+                                Term <= '0';
+             when operatiiProdPartial =>
+                                        LoadA <= '1';
+                                        RstA <= '0';
+                                        RstB <= '0';
+                                        RstQ <= '0';
+                                        LoadB <= '0';
+                                        shrAQ <= '0';
+                                        LoadQ <= '0';
+                                        Term <= '0';
+             when shiftare =>   LoadA <= '0';
+                                RstA <= '0';
+                                RstB <= '0';
+                                RstQ <= '0';
+                                LoadB <= '0';
+                                shrAQ <= '1';
+                                LoadQ <= '0';
+                                Term <= '0';
+             
+             when testC =>
+                            LoadA <= '0';
+                            RstA <= '0';
+                            RstB <= '0';
+                            RstQ <= '0';
+                            LoadB <= '0';
+                            shrAQ <= '0';
+                            LoadQ <= '0';
+                            Term <= '0';
+             when stop =>
+                            LoadA <= '0';
+                            RstA <= '0';
+                            RstB <= '0';
+                            RstQ <= '0';
+                            LoadB <= '0';
+                            shrAQ <= '0';
+                            LoadQ <= '0';
+                            Term <= '1';
+        end case;
+    end process;
+
+end Behavioral;
